@@ -1,6 +1,6 @@
 ---
-name: Saurav Lamsal
-avatar: /static/images/avatar.png
+name: Saurabh Lamsal
+avatar: /static/images/me.png
 occupation: Professor of Atmospheric Science
 company: Qlur.com
 email: hi@lamsal.io

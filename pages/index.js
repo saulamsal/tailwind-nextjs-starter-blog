@@ -20,9 +20,9 @@ export default function Home({ posts }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="px-4 pt-6 pb-8 space-y-2 md:space-y-5">
+        <div className="pb-8 space-y-2 md:space-y-5">
           <h1
-            className="mt-4 mb-4 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 "
+            className="mt-4 mb-4 text-3xl italic font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 "
             style={{
               // 'background': '#86abd5',
               padding: '0 10px',
@@ -33,11 +33,19 @@ export default function Home({ posts }) {
           >
             Hey there!
           </h1>
-          <p className="max-w-3xl text-lg leading-7 text-gray-500 dark:text-gray-400 ">
+          <p
+            className="max-w-3xl p-3 text-lg leading-7 text-gray-500 rounded-lg dark:text-gray-400 "
+            style={
+              {
+                // boxShadow: '0 2px 17px -2px hsl(0deg 0% 66% / 21%)'
+              }
+            }
+          >
             <span
-              className="rounded-full  inline-flex items-center justify-center pl-1  pr-2   ml-9.5 relative top-1 gradient-bg mr-1"
+              className="rounded-full  inline-flex items-center justify-center pl-0.5  pr-2  ml-9.5 relative top-1 gradient-bg mr-1"
               style={{
                 color: '#000',
+                height: '22px',
               }}
             >
               {' '}
@@ -46,7 +54,7 @@ export default function Home({ posts }) {
             </span>
             is an{' '}
             <a
-              className="text-gray-300 external-link"
+              className="text-black dark:text-gray-300 external-link "
               href="https://www.producthunt.com/products/howtoreplyto-com#howtoreplyto-com"
             >
               award winning <img src="static/svg/top-right.svg" className="inline w-4 h-4 "></img>
@@ -60,8 +68,8 @@ export default function Home({ posts }) {
             </div>
             <div className="mt-4">
               As a seasoned Software Engineer, he has contributed significantly to numerous
-              corporations including the globally-renowned Fly Emirates, Stock Yard Bank (NYSE:
-              SYB), Midwestern Insurance, Wirecrafters, and several others in various industries.
+              corporations like Fly Emirates, Stock Yard Bank (NYSE: SYB), Midwestern Insurance,
+              Wirecrafters, and several others in various industries.
               <div className="mt-4">
                 When he's not elbow-deep in code, you'll find Saurabh time-traveling through
                 history, space-hopping across the cosmos, or fortune-telling with futurology. Who
@@ -69,6 +77,10 @@ export default function Home({ posts }) {
               </div>
             </div>
           </p>
+
+          <a className="flex mt-4 text-lg font-bold" href="mailto:saulamsal@yahoo.com">
+            Say hiii👋 to him. ✉️{' '}
+          </a>
         </div>
 
         <div className="p-2 rounded-lg gradient-bg" style={{}}>
@@ -84,22 +96,22 @@ export default function Home({ posts }) {
             >
               <div className="w-full pt-2">
                 <div
-                  className="mx-2 text-lg font-semibold leading-4 text-black uppercase"
+                  className="mx-2 text-sm font-semibold leading-4 text-black uppercase"
                   style={{ letterSpacing: 3 }}
                 >
                   Qlur
                 </div>
                 <h2
-                  className="mx-2 mt-3 mb-8 text-5xl font-bold tracking-tight text-black"
+                  className="mx-2 mt-3 mb-8 text-3xl font-bold tracking-tight text-black"
                   style={{ lineHeight: '110%' }}
                 >
                   Currently building QLUR
                 </h2>
               </div>
-              <div className="flex mb-16">
+              <div className="flex mb-6">
                 <div className="flex w-px ml-4 mr-8 bg-gray-400" style={{}} />
                 <div className="">
-                  <p className="max-w-screen-sm font-serif text-xl font-normal leading-8 text-black opacity-700">
+                  <p className="max-w-screen-sm font-serif text-base font-normal leading-8 text-black opacity-700">
                     We're building a platform that provides curated football news, headlines,
                     tweets, videos and live scores from world football customized to an individual's
                     preferences.

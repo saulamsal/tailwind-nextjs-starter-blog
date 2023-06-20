@@ -19,7 +19,11 @@ module.exports = {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: colors.teal,
+        primary: {
+          DEFAULT: '#7e9eca',
+          500: '#7e9eca',
+        },
+
         gray: colors.neutral,
       },
       typography: (theme) => ({

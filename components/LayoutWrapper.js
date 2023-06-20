@@ -40,10 +40,13 @@ const LayoutWrapper = ({ children }) => {
                 </Link>
               ))}
             </div>
-            <ThemeSwitch />
+
             <MobileNav />
           </div>
         </header> */}
+        <div className="mt-4 flex item-end justify-end">
+          <ThemeSwitch />
+        </div>
         <main className="mb-auto">{children}</main>
         <Footer />
       </div>
