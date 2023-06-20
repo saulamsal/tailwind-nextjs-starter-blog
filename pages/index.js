@@ -22,26 +22,47 @@ export default function Home({ posts }) {
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="pt-6 pb-8 space-y-2 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Saurabh
+            Hey there!
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+            <span
+              className="rounded-full  inline-flex items-center justify-center pl-0.5 pr-2 text-black mr-1 relative top-1.5"
+              style={{ backgroundColor: '#7fa3cb' }}
+            >
+              {' '}
+              <img
+                src="static/images/me.png"
+                className="w-6 h-6 rounded-full mr-0.5 "
+              /> Saurabh{' '}
+            </span>
+            is an{' '}
             <a
-              className="italic text-red-500"
+              className=" text-gray-300 after:content-['↗']"
               href="https://www.producthunt.com/products/howtoreplyto-com#howtoreplyto-com"
             >
-              Award winning
+              award winning
             </a>{' '}
-            Software Engineer with an extreme passion for crafting a delightful UI experience.
-            <div>I love creating software that adds value to people, customers or myself. </div>
-            Currently, I'm building ReplyBrain.com, Qlur.com, and HowToReplyTo.com
+            founder with an extreme passion for crafting a delightful UI experience.
+            <div className="mt-4">
+              He loves creating software that adds value to people, customers or himself and design
+              products that <span className="italic">work</span>. Although a self-proclaimed
+              T-shaped engineer, his passion truly lies in frontend engineering, web performance,
+              optimization, and scaling products.
+            </div>
+            <div className="mt-4">
+              As a seasoned Software Engineer, he has contributed significantly to numerous
+              corporations including the globally-renowned Fly Emirates, Stock Yard Bank (NYSE:
+              SYB), Midwestern Insurance, Wirecrafters, and several others in various industries.
+              <div className="mt-4">
+                When he's not elbow-deep in code, you'll find Saurabh time-traveling through
+                history, space-hopping across the cosmos, or fortune-telling with futurology. Who
+                said coders can't have a wild side?
+              </div>
+            </div>
           </p>
         </div>
 
-        <div
-          data-w-id="5a2bf6b1-94b7-1195-dd8c-2451d5964b27"
-          className="leading-5 text-zinc-800"
-          style={{}}
-        >
+        <div className="p-2 rounded-lg gradient-bg" style={{}}>
           <div
             data-w-id="4b9e48d4-bf21-c4ef-bfb8-e1f828eb7689"
             className="w-full mr-0 text-zinc-800"
@@ -54,29 +75,29 @@ export default function Home({ posts }) {
             >
               <div className="w-full pt-2">
                 <div
-                  className="text-lg font-semibold leading-4 uppercase text-neutral-600"
+                  className="text-lg font-semibold leading-4 text-black uppercase"
                   style={{ letterSpacing: 3 }}
                 >
                   Qlur
                 </div>
                 <h2
-                  className="mt-3 mb-8 font-sans font-serif text-5xl font-bold tracking-tight text-red-600"
+                  className="mt-3 mb-8 font-serif text-5xl font-bold tracking-tight text-black"
                   style={{ lineHeight: '110%' }}
                 >
-                  I’m currently the founder of Qlur
+                  Currently building QLUR.com
                 </h2>
               </div>
               <div className="flex mb-16">
                 <div className="flex w-px mr-8 bg-neutral-600" style={{ opacity: '0.15' }} />
                 <div className="">
-                  <p className="max-w-screen-sm font-sans text-xl font-normal leading-8 text-red-900 opacity-700">
+                  <p className="max-w-screen-sm font-sans text-xl font-normal leading-8 text-black opacity-700">
                     We're building a platform that provides curated soccer news, headlines, and
                     details from world football. It also provides football news and live score feeds
                     from around the world customized to an individual's preferences.
                     <a
                       href="https://qlur.com"
                       target="_blank"
-                      className="font-medium bg-transparent cursor-pointer hover:rounded hover:bg-gray-200 hover:text-slate-900 hover:opacity-100 hover:bg-opacity-[0.1] sm:font-semibold sm:text-red-600 hover,sm:text-slate-900"
+                      className="after:content-['↗'] font-medium bg-transparent cursor-pointer hover:rounded hover:bg-gray-200 hover:text-slate-900 hover:opacity-100 hover:bg-opacity-[0.1] sm:font-semibold sm:text-black hover,sm:text-slate-900"
                       style={{
                         transition: 'color 200ms ease 0s, background-color 200ms ease 0s',
                         textDecoration: 'underline',
