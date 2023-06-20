@@ -1,12 +1,12 @@
 ---
-name: Tails Azimuth
+name: Saurav Lamsal
 avatar: /static/images/avatar.png
 occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+company: Qlur.com
+email: hi@lamsal.io
+twitter: https://twitter.com/saulamsal
+linkedin: https://www.linkedin.com/in/saulamsal
+github: https://github.com/saulamsal
 ---
 
 Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
