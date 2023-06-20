@@ -203,11 +203,31 @@ export default function Home({ posts }) {
         <div>
           <div className="mt-10 mb-2 text-xl text-gray-500 uppercase font-extra-light dark:text-gray-400">
             {' '}
-            Other products I own:
+            Other products I built:
           </div>
 
           <div
             className="mt-4 center relative inline-block select-none whitespace-nowrap rounded-full px-3.5 py-1.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white"
+            style={{
+              background: '#1ba3a0',
+            }}
+          >
+            <div className="absolute w-5 h-5 top-2/4 left-1 -translate-y-2/4">
+              <img
+                alt="HowToReplyTo.com"
+                src="https://howtoreplyto.com/favicon.ico"
+                className="relative inline-block object-cover object-center w-5 h-5 translate-x-px translate-y-px rounded-full"
+              />
+            </div>
+            <div className="mt-px ml-4">
+              <p className="block font-sans text-sm antialiased font-medium leading-none text-white capitalize">
+                HowToReplyTo.com
+              </p>
+            </div>
+          </div>
+
+          <div
+            className="ml-3 mt-4 center relative inline-block select-none whitespace-nowrap rounded-full px-3.5 py-1.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white"
             style={{
               background: '#1405ed',
             }}
@@ -222,6 +242,26 @@ export default function Home({ posts }) {
             <div className="mt-px ml-4">
               <p className="block font-sans text-sm antialiased font-medium leading-none text-white capitalize">
                 ReplyBrain.com
+              </p>
+            </div>
+          </div>
+
+          <div
+            className="ml-3 mt-4 center relative inline-block select-none whitespace-nowrap rounded-full px-3.5 py-1.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white"
+            style={{
+              background: '#bd3b30',
+            }}
+          >
+            <div className="absolute w-5 h-5 top-2/4 left-1 -translate-y-2/4">
+              <img
+                alt="replybrain.com"
+                src="https://logotip.online/static/assets/img/favicon-32x32.png"
+                className="relative inline-block object-cover object-center w-5 h-5 translate-x-px translate-y-px rounded-full"
+              />
+            </div>
+            <div className="mt-px ml-4">
+              <p className="block font-sans text-sm antialiased font-medium leading-none text-white capitalize">
+                LogoTip.Online
               </p>
             </div>
           </div>
