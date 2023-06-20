@@ -19,7 +19,7 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="">
         <div className="pb-8 space-y-2 md:space-y-5">
           <h1
             className="mt-4 mb-4 text-3xl italic font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 "
@@ -79,7 +79,7 @@ export default function Home({ posts }) {
           </p>
 
           <div className="mb-6">
-            <div className="font-extralight  text-xl uppercase text-gray-500 mb-2 dark:text-gray-400">
+            <div className="mb-2 text-xl text-gray-500 uppercase font-extralight dark:text-gray-400">
               {' '}
               Interests{' '}
             </div>
@@ -87,7 +87,7 @@ export default function Home({ posts }) {
               <div>
                 {' '}
                 <div className="inline-flex justify-center items-center m-1 font-medium  py-2.5 px-3 bg-white rounded-full text-blue-700 bg-blue-50 dark:bg-stone-900  ">
-                  <div className="text-xs font-bold leading-none max-w-full flex-initial">
+                  <div className="flex-initial max-w-full text-xs font-bold leading-none">
                     Frontend Engineering
                   </div>
                 </div>
@@ -96,7 +96,7 @@ export default function Home({ posts }) {
               <div>
                 {' '}
                 <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-red-700 bg-red-50 dark:bg-stone-900">
-                  <div className="text-xs font-bold leading-none max-w-full flex-initial">
+                  <div className="flex-initial max-w-full text-xs font-bold leading-none">
                     Distributed Systems
                   </div>
                 </div>
@@ -105,7 +105,7 @@ export default function Home({ posts }) {
               <div>
                 {' '}
                 <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
-                  <div className="text-xs font-bold leading-none max-w-full flex-initial">
+                  <div className="flex-initial max-w-full text-xs font-bold leading-none">
                     Backend
                   </div>
                 </div>
@@ -114,7 +114,7 @@ export default function Home({ posts }) {
               <div>
                 {' '}
                 <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-purple-700 bg-purple-50 dark:bg-stone-900">
-                  <div className="text-xs font-bold leading-none max-w-full flex-initial">
+                  <div className="flex-initial max-w-full text-xs font-bold leading-none">
                     Product Development
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export default function Home({ posts }) {
               <div>
                 {' '}
                 <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-cyan-700 bg-cyan-50 dark:bg-stone-900">
-                  <div className="text-xs font-bold leading-none max-w-full flex-initial">
+                  <div className="flex-initial max-w-full text-xs font-bold leading-none">
                     Design Systems
                   </div>
                 </div>
@@ -132,7 +132,7 @@ export default function Home({ posts }) {
               <div>
                 {' '}
                 <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-orange-700 bg-orange-50 dark:bg-stone-900">
-                  <div className="text-xs font-bold leading-none max-w-full flex-initial">
+                  <div className="flex-initial max-w-full text-xs font-bold leading-none">
                     UI/UX
                   </div>
                 </div>
@@ -198,6 +198,38 @@ export default function Home({ posts }) {
               </div>
             </div>
           </div>
+        </div>
+
+        <div>
+          <div className="mt-10 mb-2 text-xl text-gray-500 uppercase font-extra-light dark:text-gray-400">
+            {' '}
+            Other products I own:
+          </div>
+
+          <div
+            className="mt-4 center relative inline-block select-none whitespace-nowrap rounded-full px-3.5 py-1.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white"
+            style={{
+              background: '#1405ed',
+            }}
+          >
+            <div className="absolute w-5 h-5 top-2/4 left-1 -translate-y-2/4">
+              <img
+                alt="replybrain.com"
+                src="https://replybrain.com/replybrain/favicon.png"
+                className="relative inline-block object-cover object-center w-5 h-5 translate-x-px translate-y-px rounded-full"
+              />
+            </div>
+            <div className="mt-px ml-4">
+              <p className="block font-sans text-sm antialiased font-medium leading-none text-white capitalize">
+                ReplyBrain.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-10 mb-2 text-xl text-gray-500 uppercase font-extra-light dark:text-gray-400">
+          {' '}
+          Blog (in progress){' '}
         </div>
 
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
