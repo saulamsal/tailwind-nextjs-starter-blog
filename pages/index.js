@@ -59,12 +59,12 @@ export default function Home({ posts }) {
             >
               award winning <img src="static/svg/top-right.svg" className="inline w-4 h-4 "></img>
             </a>{' '}
-            founder with an extreme passion for crafting a delightful UI experience.
+            founder with an extreme passion for crafting a delightful user experience.
             <div className="mt-4">
-              He loves creating software that adds value to people, customers or himself and design
-              products that <span className="italic">work</span>. Although a self-proclaimed
-              T-shaped engineer, his passion truly lies in frontend engineering, web performance,
-              optimization, and scaling products.
+              He loves creating software that adds value to people, customers or himself. He likes
+              to design products that just <span className="italic">work</span>. Although a
+              self-proclaimed T-shaped engineer, his passion truly lies in frontend engineering, web
+              performance, optimization, and scaling products.
             </div>
             <div className="mt-4">
               As a seasoned Software Engineer, he has contributed significantly to numerous
