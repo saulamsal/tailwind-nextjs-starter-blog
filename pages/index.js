@@ -20,14 +20,23 @@ export default function Home({ posts }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+        <div className="pt-6 pb-8 space-y-2 md:space-y-5 px-4">
+          <h1
+            className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 mb-4 mt-4"
+            style={{
+              background: '#86abd5',
+              padding: '0 10px',
+              borderRadius: '20px 20px 20px 0px',
+              display: 'inline-block',
+              color: '#000',
+            }}
+          >
             Hey there!
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             <span
               className="rounded-full  inline-flex items-center justify-center pl-0.5 pr-2 text-black mr-1 relative top-1.5"
-              style={{ backgroundColor: '#7fa3cb' }}
+              style={{ border: 'dashed 1px', color: '#86abd5' }}
             >
               {' '}
               <img
