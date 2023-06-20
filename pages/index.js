@@ -22,7 +22,7 @@ export default function Home({ posts }) {
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="px-4 pt-6 pb-8 space-y-2 md:space-y-5">
           <h1
-            className="mt-4 mb-4 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark-gradient-bg"
+            className="mt-4 mb-4 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 "
             style={{
               // 'background': '#86abd5',
               padding: '0 10px',
@@ -33,23 +33,23 @@ export default function Home({ posts }) {
           >
             Hey there!
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+          <p className="max-w-3xl text-lg leading-7 text-gray-500 dark:text-gray-400 ">
             <span
-              className="rounded-full  inline-flex items-center justify-center  pr-2   ml-9.5 relative top-1 "
+              className="rounded-full  inline-flex items-center justify-center pl-1  pr-2   ml-9.5 relative top-1 gradient-bg mr-1"
               style={{
-                color: '#86abd5',
+                color: '#000',
               }}
             >
               {' '}
               <img src="static/images/me.png" className="w-5 h-5 rounded-full mr-0.5 " />{' '}
-              <span className="dark-gradient-bg-text">Saurabh</span>{' '}
+              <span className="">Saurabh</span>{' '}
             </span>
             is an{' '}
             <a
               className="text-gray-300 external-link"
               href="https://www.producthunt.com/products/howtoreplyto-com#howtoreplyto-com"
             >
-              award winning <img src="static/svg/top-right.svg" className="w-4 h-4 inline "></img>
+              award winning <img src="static/svg/top-right.svg" className="inline w-4 h-4 "></img>
             </a>{' '}
             founder with an extreme passion for crafting a delightful UI experience.
             <div className="mt-4">
@@ -103,6 +103,8 @@ export default function Home({ posts }) {
                     We're building a platform that provides curated football news, headlines,
                     tweets, videos and live scores from world football customized to an individual's
                     preferences.
+                    <br /> <br />
+                    Available on Web, iOS and Android.
                     <a
                       href="https://qlur.com"
                       target="_blank"
