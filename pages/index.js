@@ -78,6 +78,68 @@ export default function Home({ posts }) {
             </div>
           </p>
 
+          <div className="mb-6">
+            <div className="font-extralight  text-xl uppercase text-gray-500 mb-2 dark:text-gray-400">
+              {' '}
+              Interests{' '}
+            </div>
+            <div className="flex flex-wrap">
+              <div>
+                {' '}
+                <div className="inline-flex justify-center items-center m-1 font-medium  py-2.5 px-3 bg-white rounded-full text-blue-700 bg-blue-50 dark:bg-stone-900  ">
+                  <div className="text-xs font-bold leading-none max-w-full flex-initial">
+                    Frontend Engineering
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                {' '}
+                <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-red-700 bg-red-50 dark:bg-stone-900">
+                  <div className="text-xs font-bold leading-none max-w-full flex-initial">
+                    Distributed Systems
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                {' '}
+                <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
+                  <div className="text-xs font-bold leading-none max-w-full flex-initial">
+                    Backend
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                {' '}
+                <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-purple-700 bg-purple-50 dark:bg-stone-900">
+                  <div className="text-xs font-bold leading-none max-w-full flex-initial">
+                    Product Development
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                {' '}
+                <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-cyan-700 bg-cyan-50 dark:bg-stone-900">
+                  <div className="text-xs font-bold leading-none max-w-full flex-initial">
+                    Design Systems
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                {' '}
+                <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-orange-700 bg-orange-50 dark:bg-stone-900">
+                  <div className="text-xs font-bold leading-none max-w-full flex-initial">
+                    UI/UX
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <a className="flex mt-4 text-lg font-bold" href="mailto:saulamsal@yahoo.com">
             Say hiii👋 to him. ✉️{' '}
           </a>
@@ -94,22 +156,22 @@ export default function Home({ posts }) {
               className="opacity-100"
               style={{ opacity: 1, willChange: 'opacity', maxWidth: 720 }}
             >
-              <div className="w-full pt-2">
+              <div className="w-full">
                 <div
                   className="mx-2 text-sm font-semibold leading-4 text-black uppercase"
                   style={{ letterSpacing: 3 }}
                 >
-                  Qlur
+                  Qlur.com
                 </div>
                 <h2
-                  className="mx-2 mt-3 mb-8 text-3xl font-bold tracking-tight text-black"
+                  className="mx-2 mt-3 mb-8 text-xl font-bold tracking-tight text-black"
                   style={{ lineHeight: '110%' }}
                 >
                   Currently building QLUR
                 </h2>
               </div>
-              <div className="flex mb-6">
-                <div className="flex w-px ml-4 mr-8 bg-gray-400" style={{}} />
+              <div className="flex mb-4">
+                <div className="flex w-px ml-4 mr-4 bg-gray-400" style={{}} />
                 <div className="">
                   <p className="max-w-screen-sm font-serif text-base font-normal leading-8 text-black opacity-700">
                     We're building a platform that provides curated football news, headlines,
@@ -155,7 +217,7 @@ export default function Home({ posts }) {
                     <div className="space-y-5 xl:col-span-3">
                       <div className="space-y-6">
                         <div>
-                          <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                          <h2 className="text-2xl font-bold tracking-tight">
                             <Link
                               href={`/blog/${slug}`}
                               className="text-gray-900 dark:text-gray-100"
