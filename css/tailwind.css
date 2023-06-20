@@ -41,3 +41,30 @@ body {
     radial-gradient(70.41% 100% at 50% 0%, #d5b300 0%, #7ea3cb 100%);
   background-blend-mode: screen, screen, lighten, overlay, lighten, difference, normal;
 }
+
+.dark-gradient-bg {
+  background: linear-gradient(301.28deg, #ff0000 0%, #1d0027 100%),
+    linear-gradient(121.28deg, #207a00 0%, #950000 100%),
+    linear-gradient(238.72deg, #ffb800 0%, #000000 100%),
+    linear-gradient(238.72deg, #00d1ff 0%, #a80000 100%),
+    linear-gradient(125.95deg, #00e0ff 10.95%, #87009d 100%),
+    linear-gradient(263.7deg, #b60000 3.43%, #b100a0 96.57%),
+    linear-gradient(320.54deg, #800000 0%, #00c2ff 72.37%),
+    linear-gradient(130.22deg, #8fa600 18.02%, #5a31ff 100%);
+  background-blend-mode: difference, color-dodge, difference, lighten, color-dodge, difference,
+    difference, normal;
+  color: #fff;
+}
+/* 
+.dark-gradient-bg-text{
+      text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    background: #dca946;
+    background-blend-mode: multiply,color-dodge,difference,color-dodge,difference,lighten,difference,color-dodge,difference,normal;
+    background-clip: text;
+    -webkit-background-clip: text;
+  background: linear-gradient(301.28deg, #FF0000 0%, #1D0027 100%), linear-gradient(121.28deg, #207A00 0%, #950000 100%), linear-gradient(238.72deg, #FFB800 0%, #000000 100%), linear-gradient(238.72deg, #00D1FF 0%, #A80000 100%), linear-gradient(125.95deg, #00E0FF 10.95%, #87009D 100%), linear-gradient(263.7deg, #B60000 3.43%, #B100A0 96.57%), linear-gradient(320.54deg, #800000 0%, #00C2FF 72.37%), linear-gradient(130.22deg, #8FA600 18.02%, #5A31FF 100%);
+background-blend-mode: difference, color-dodge, difference, lighten, color-dodge, difference, difference, normal;
+
+color: transparent;
+} */

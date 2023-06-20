@@ -20,36 +20,36 @@ export default function Home({ posts }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="pt-6 pb-8 space-y-2 md:space-y-5 px-4">
+        <div className="px-4 pt-6 pb-8 space-y-2 md:space-y-5">
           <h1
-            className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 mb-4 mt-4"
+            className="mt-4 mb-4 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark-gradient-bg"
             style={{
-              background: '#86abd5',
+              // 'background': '#86abd5',
               padding: '0 10px',
               borderRadius: '20px 20px 20px 0px',
               display: 'inline-block',
-              color: '#000',
+              // color: '#000'
             }}
           >
             Hey there!
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             <span
-              className="rounded-full  inline-flex items-center justify-center pl-0.5 pr-2 text-black mr-1 relative top-1.5"
-              style={{ border: 'dashed 1px', color: '#86abd5' }}
+              className="rounded-full  inline-flex items-center justify-center  pr-2   ml-9.5 relative top-1 "
+              style={{
+                color: '#86abd5',
+              }}
             >
               {' '}
-              <img
-                src="static/images/me.png"
-                className="w-6 h-6 rounded-full mr-0.5 "
-              /> Saurabh{' '}
+              <img src="static/images/me.png" className="w-5 h-5 rounded-full mr-0.5 " />{' '}
+              <span className="dark-gradient-bg-text">Saurabh</span>{' '}
             </span>
             is an{' '}
             <a
-              className=" text-gray-300 after:content-['↗']"
+              className="text-gray-300 external-link"
               href="https://www.producthunt.com/products/howtoreplyto-com#howtoreplyto-com"
             >
-              award winning
+              award winning <img src="static/svg/top-right.svg" className="w-4 h-4 inline "></img>
             </a>{' '}
             founder with an extreme passion for crafting a delightful UI experience.
             <div className="mt-4">
@@ -84,38 +84,39 @@ export default function Home({ posts }) {
             >
               <div className="w-full pt-2">
                 <div
-                  className="text-lg font-semibold leading-4 text-black uppercase"
+                  className="mx-2 text-lg font-semibold leading-4 text-black uppercase"
                   style={{ letterSpacing: 3 }}
                 >
                   Qlur
                 </div>
                 <h2
-                  className="mt-3 mb-8 font-serif text-5xl font-bold tracking-tight text-black"
+                  className="mx-2 mt-3 mb-8 text-5xl font-bold tracking-tight text-black"
                   style={{ lineHeight: '110%' }}
                 >
-                  Currently building QLUR.com
+                  Currently building QLUR
                 </h2>
               </div>
               <div className="flex mb-16">
-                <div className="flex w-px mr-8 bg-neutral-600" style={{ opacity: '0.15' }} />
+                <div className="flex w-px ml-4 mr-8 bg-gray-400" style={{}} />
                 <div className="">
-                  <p className="max-w-screen-sm font-sans text-xl font-normal leading-8 text-black opacity-700">
-                    We're building a platform that provides curated soccer news, headlines, and
-                    details from world football. It also provides football news and live score feeds
-                    from around the world customized to an individual's preferences.
+                  <p className="max-w-screen-sm font-serif text-xl font-normal leading-8 text-black opacity-700">
+                    We're building a platform that provides curated football news, headlines,
+                    tweets, videos and live scores from world football customized to an individual's
+                    preferences.
                     <a
                       href="https://qlur.com"
                       target="_blank"
-                      className="after:content-['↗'] font-medium bg-transparent cursor-pointer hover:rounded hover:bg-gray-200 hover:text-slate-900 hover:opacity-100 hover:bg-opacity-[0.1] sm:font-semibold sm:text-black hover,sm:text-slate-900"
+                      className=" font-medium bg-transparent cursor-pointer hover:rounded hover:bg-gray-200 hover:text-slate-900 hover:opacity-100 hover:bg-opacity-[0.1] sm:font-semibold sm:text-black hover,sm:text-slate-900"
                       style={{
                         transition: 'color 200ms ease 0s, background-color 200ms ease 0s',
                         textDecoration: 'underline',
                       }}
                       rel="noreferrer"
                     >
+                      <br />
                       Learn more here
+                      {/* <img src="static/svg/top-right.svg" class="w-4 h-4 inline "></img> */}
                     </a>
-                    .
                   </p>
                 </div>
               </div>
