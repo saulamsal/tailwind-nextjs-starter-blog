@@ -1,9 +1,15 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import siteMetadata from '@/data/siteMetadata'
+import posthog from 'posthog-js'
 
 const CommonSEO = ({ title, description, ogType, ogImage, twImage }) => {
   const router = useRouter()
+
+  posthog.init('phc_a2xJ4zLcsG6apcN9COFKUPYRvPU7ll84XBOg19HceOC', {
+    api_host: 'https://app.posthog.com',
+  })
+
   return (
     <Head>
       <title>{title}</title>
