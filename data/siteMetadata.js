@@ -1,15 +1,15 @@
 const siteMetadata = {
   title: 'Saurabh',
   // author: 'Tails Azimuth',
-  headerTitle: 'Lamsal',
-  description: 'A blog created with Next.js and Tailwind.css',
+  headerTitle: 'Saurabh',
+  description: 'I build things.',
   language: 'en-us',
   theme: 'light', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '/static/images/og_pp.png',
   email: 'address@yoursite.com',
   github: 'https://github.com',
   twitter: 'https://twitter.com/Twitter',
