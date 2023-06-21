@@ -20,8 +20,8 @@ module.exports = {
       },
       colors: {
         primary: {
-          DEFAULT: '#7e9eca',
-          500: '#7e9eca',
+          DEFAULT: '#5796d9',
+          500: '#5796d9',
         },
 
         gray: colors.neutral,

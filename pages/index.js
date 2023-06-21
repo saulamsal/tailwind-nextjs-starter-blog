@@ -22,55 +22,60 @@ export default function Home({ posts }) {
       <div className="">
         <div className="pb-8 space-y-2 md:space-y-5">
           <h1
-            className="mt-4 mb-4 text-3xl italic font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 "
+            className="mt-12 mb-4 text-3xl italic font-extrabold leading-9 tracking-tight text-gray-900 gradient-bg dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 "
             style={{
               // 'background': '#86abd5',
-              padding: '0 10px',
-              borderRadius: '20px 20px 20px 0px',
+              padding: '8px 30px',
+              borderRadius: '50px 50px 50px 0px',
               display: 'inline-block',
               // color: '#000'
             }}
           >
-            Hey there!
+            Hey there! 👋
           </h1>
           <p
-            className="max-w-3xl p-3 text-lg leading-7 text-gray-500 rounded-lg dark:text-gray-400 "
+            className="max-w-3xl p-3 text-lg leading-7 text-gray-800 rounded-lg dark:text-gray-400 "
             style={
               {
                 // boxShadow: '0 2px 17px -2px hsl(0deg 0% 66% / 21%)'
               }
             }
           >
-            <span
-              className="rounded-full  inline-flex items-center justify-center pl-0.5  pr-2  ml-9.5 relative top-1 gradient-bg mr-1"
-              style={{
-                color: '#000',
-                height: '22px',
-              }}
-            >
-              {' '}
-              <img src="static/images/me.png" className="w-5 h-5 rounded-full mr-0.5 " />{' '}
-              <span className="">Saurabh</span>{' '}
+            <span className="text-3xl">
+              <span
+                className="rounded-full  inline-flex items-center justify-center pl-1  pr-2  ml-9.5 relative top-1  mr-1"
+                style={{
+                  color: '#000',
+                  height: '32px',
+                  border: 'dotted 1px',
+                }}
+              >
+                {' '}
+                <img src="static/images/me.png" className="w-7 h-7 rounded-full mr-0.5 " />{' '}
+                <span className="">Saurabh</span>{' '}
+              </span>
+              is an{' '}
+              <a
+                className="italic external-link"
+                href="https://www.producthunt.com/products/howtoreplyto-com#howtoreplyto-com"
+              >
+                award winning{' '}
+                <img src="static/svg/top-right.svg" className="inline w-5 h-5 -ml-2 "></img>
+              </a>{' '}
+              founder with an extreme passion for crafting a delightful user experience.
             </span>
-            is an{' '}
-            <a
-              className="text-black dark:text-gray-300 external-link "
-              href="https://www.producthunt.com/products/howtoreplyto-com#howtoreplyto-com"
-            >
-              award winning <img src="static/svg/top-right.svg" className="inline w-4 h-4 "></img>
-            </a>{' '}
-            founder with an extreme passion for crafting a delightful user experience.
-            <div className="mt-4">
+
+            <div className="mt-4 font-serif">
               He loves creating software that adds value to people, customers or himself. He likes
               to design products that just <span className="italic">work</span>. Although a
               self-proclaimed T-shaped engineer, his passion truly lies in frontend engineering, web
               performance, optimization, and scaling products.
             </div>
-            <div className="mt-4">
+            <div className="mt-4 font-serif">
               As a seasoned Software Engineer, he has contributed significantly to numerous
               corporations like Fly Emirates, Stock Yard Bank (NYSE: SYB), Midwestern Insurance,
               Wirecrafters, and several others in various industries.
-              <div className="mt-4">
+              <div className="mt-4 font-serif">
                 When he's not elbow-deep in code, you'll find Saurabh time-traveling through
                 history, space-hopping across the cosmos, or fortune-telling with futurology. Who
                 said coders can't have a wild side?
@@ -78,132 +83,162 @@ export default function Home({ posts }) {
             </div>
           </p>
 
-          <div className="mb-6">
-            <div className="mb-2 text-xl text-gray-500 uppercase font-extralight dark:text-gray-400">
-              {' '}
-              Interests{' '}
-            </div>
-            <div className="flex flex-wrap">
-              <div>
-                {' '}
-                <div className="inline-flex justify-center items-center m-1 font-medium  py-2.5 px-3 bg-white rounded-full text-blue-700 bg-blue-50 dark:bg-stone-900  ">
-                  <div className="flex-initial max-w-full text-xs font-bold leading-none">
-                    Frontend Engineering
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                {' '}
-                <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-red-700 bg-red-50 dark:bg-stone-900">
-                  <div className="flex-initial max-w-full text-xs font-bold leading-none">
-                    Distributed Systems
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                {' '}
-                <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
-                  <div className="flex-initial max-w-full text-xs font-bold leading-none">
-                    Backend
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                {' '}
-                <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-purple-700 bg-purple-50 dark:bg-stone-900">
-                  <div className="flex-initial max-w-full text-xs font-bold leading-none">
-                    Product Development
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                {' '}
-                <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-cyan-700 bg-cyan-50 dark:bg-stone-900">
-                  <div className="flex-initial max-w-full text-xs font-bold leading-none">
-                    Design Systems
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                {' '}
-                <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-orange-700 bg-orange-50 dark:bg-stone-900">
-                  <div className="flex-initial max-w-full text-xs font-bold leading-none">
-                    UI/UX
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <a className="flex mt-4 text-lg font-bold" href="mailto:saulamsal@yahoo.com">
-            Say hiii👋 to him. ✉️{' '}
+          <a
+            className="flex mt-4 ml-3.5 text-3xl font-bold font-serif"
+            href="mailto:saulamsal@yahoo.com"
+            style={
+              {
+                // 'text-shadow': '0  13.36px 8.896px #c4b59d, 0 -2px 1px #fff'
+              }
+            }
+          >
+            Say hi to him. ✉️{' '}
           </a>
         </div>
 
-        <div className="p-2 rounded-lg gradient-bg" style={{}}>
-          <div
-            data-w-id="4b9e48d4-bf21-c4ef-bfb8-e1f828eb7689"
-            className="w-full mr-0 text-zinc-800"
-            style={{ willChange: 'opacity', opacity: '0.90025' }}
-          >
-            <div
-              data-w-id="d9abda31-191a-73bd-2973-efe4aca48a60"
-              className="opacity-100"
-              style={{ opacity: 1, willChange: 'opacity', maxWidth: 720 }}
-            >
-              <div className="w-full">
-                <div
-                  className="mx-2 text-sm font-semibold leading-4 text-black uppercase"
-                  style={{ letterSpacing: 3 }}
-                >
-                  Qlur.com
-                </div>
-                <h2
-                  className="mx-2 mt-3 mb-8 text-xl font-bold tracking-tight text-black"
-                  style={{ lineHeight: '110%' }}
-                >
-                  Currently building QLUR
-                </h2>
-              </div>
-              <div className="flex mb-4">
-                <div className="flex w-px ml-4 mr-4 bg-gray-400" style={{}} />
-                <div className="">
-                  <p className="max-w-screen-sm font-serif text-base font-normal leading-8 text-black opacity-700">
-                    We're building a platform that provides curated football news, headlines,
-                    tweets, videos and live scores from world football customized to an individual's
-                    preferences.
-                    <br /> <br />
-                    Available on Web, iOS and Android.
-                    <a
-                      href="https://qlur.com"
-                      target="_blank"
-                      className=" font-medium bg-transparent cursor-pointer hover:rounded hover:bg-gray-200 hover:text-slate-900 hover:opacity-100 hover:bg-opacity-[0.1] sm:font-semibold sm:text-black hover,sm:text-slate-900"
-                      style={{
-                        transition: 'color 200ms ease 0s, background-color 200ms ease 0s',
-                        textDecoration: 'underline',
-                      }}
-                      rel="noreferrer"
-                    >
-                      <br />
-                      Learn more here
-                      {/* <img src="static/svg/top-right.svg" class="w-4 h-4 inline "></img> */}
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
+        <div className="order-1 px-0 px-2 pt-4 leading-6 tracking-tight text-center bg-gray-100 rounded-md text-zinc-900 my-14">
+          <div className="  tracking-tight text-left bg-gray-100 rounded-md text-zinc-900 my-14 text-2xl font-serif  max-w-md pl-2">
+            Currently he is building QLUR.com, a platform that provides curated football news,
+            headlines, tweets, videos and live scores from world football customized to an
+            individual's preferences.
           </div>
+
+          <div className="w-full mx-auto leading-6 text-zinc-900">
+            <h2 className="font-sans text-3xl font-semibold tracking-normal">QLUR</h2>
+            <p className="mt-2 font-sans text-base font-normal tracking-normal">
+              Football news, tweets, videos<span className="italic"> - all in one place</span>.
+            </p>
+
+            <ul className="flex justify-center w-full mt-2">
+              <li className="mr-3">
+                {' '}
+                <a
+                  href="https://apps.apple.com/app/id1641830762"
+                  style={{ margin: 0 }}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  draggable="false"
+                  className=""
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={50}
+                    height={50}
+                    viewBox="0 0 50 50"
+                  >
+                    <g id="ic_app_store" transform="translate(-703 -5)">
+                      <circle
+                        id="Ellipse_312"
+                        cx={25}
+                        cy={25}
+                        r={25}
+                        fill="#fff"
+                        transform="translate(703 5)"
+                      />
+                      <g id="XMLID_4_" transform="translate(717.883 15.393)">
+                        <g id="XMLID_5_">
+                          <path
+                            id="XMLID_7_"
+                            fill="var(--text-primary)"
+                            d="M26.873 21.171a5.591 5.591 0 0 1 2.7-4.721 5.8 5.8 0 0 0-4.557-2.457c-1.919-.2-3.781 1.138-4.752 1.138-.994 0-2.5-1.126-4.123-1.092a6.064 6.064 0 0 0-5.106 3.106c-2.2 3.811-.56 9.408 1.553 12.491 1.062 1.513 2.3 3.2 3.918 3.128 1.588-.068 2.182-1 4.089-1s2.444 1 4.1.967c1.7-.023 2.776-1.513 3.792-3.037a12.748 12.748 0 0 0 1.736-3.515 5.419 5.419 0 0 1-3.35-5.008z"
+                            className="cls-2"
+                            transform="translate(-9.984 -7.997)"
+                          />
+                          <path
+                            id="XMLID_6_"
+                            fill="var(--text-primary)"
+                            d="M22.5 12.69a5.451 5.451 0 0 0 1.268-3.97 5.711 5.711 0 0 0-3.666 1.888 5.229 5.229 0 0 0-1.3 3.822 4.7 4.7 0 0 0 3.698-1.74z"
+                            className="cls-2"
+                            transform="translate(-8.734 -8.72)"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.qlur.app&hl=en_US&gl=US"
+                  style={{ margin: 0 }}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  draggable="false"
+                  className=""
+                >
+                  <svg
+                    data-name="Button - Google Play - DM"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={50}
+                    height={50}
+                    viewBox="0 0 50 50"
+                  >
+                    <circle data-name="Ellipse 311" cx={25} cy={25} r={25} fill="#fff" />
+                    <g data-name="Group 7622">
+                      <path
+                        data-name="Path 3749"
+                        d="M21.107 19.424 10.07 31.138v.007a2.983 2.983 0 0 0 4.391 1.8l.035-.021 12.423-7.168z"
+                        transform="translate(6.102 4.978)"
+                        fill="#ea4335"
+                      />
+                      <path
+                        data-name="Path 3750"
+                        d="m31.892 17.61-.01-.007-5.364-3.109-6.043 5.377 6.064 6.062 5.335-3.078a2.983 2.983 0 0 0 .018-5.245"
+                        transform="translate(6.483 4.797)"
+                        fill="#fbbc04"
+                      />
+                      <path
+                        data-name="Path 3751"
+                        d="M10.074 9.277a2.927 2.927 0 0 0-.1.767v20.7a2.871 2.871 0 0 0 .1.766L21.49 20.1z"
+                        transform="translate(6.098 4.606)"
+                        fill="#4285f4"
+                      />
+                      <path
+                        data-name="Path 3752"
+                        d="m21.189 20.472 5.711-5.711-12.408-7.194a2.986 2.986 0 0 0-4.421 1.785z"
+                        transform="translate(6.102 4.527)"
+                        fill="#34a853"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+            <p className="p-0 mx-0 mt-1 mb-0 text-center">
+              <a
+                href="/ios/health/"
+                aria-label="Learn more about the Apple Health App"
+                data-analytics-title="learn more about the apple health app"
+                className="font-sans text-base font-normal tracking-normal cursor-pointer text-sky-600"
+                style={{
+                  lineHeight: '1.4211',
+                  textDecoration: 'none',
+                  quotes: '"“" "”"',
+                }}
+              >
+                <span
+                  className="static top-0 inline pl-1 not-italic leading-none tracking-wide"
+                  style={{
+                    fontFamily: '"SF Pro Icons"',
+                    textDecoration: 'none',
+                    zIndex: 1,
+                    paddingInlineStart: '0.3em',
+                    content: '""',
+                    quotes: '"“" "”"',
+                  }}
+                />
+              </a>
+            </p>
+          </div>
+
+          <img src="/static/images/qlur_cover.png" />
         </div>
 
         <div>
-          <div className="mt-10 mb-2 text-xl text-gray-500 uppercase font-extra-light dark:text-gray-400">
+          <div className="mt-10 mb-2 text-xl text-gray-800 uppercase font-extra-light dark:text-gray-400">
             {' '}
-            Other products I built:
+            Other products he has built
           </div>
 
           <div
@@ -220,7 +255,7 @@ export default function Home({ posts }) {
               />
             </div>
             <div className="mt-px ml-4">
-              <p className="block font-sans text-sm antialiased font-medium leading-none text-white capitalize">
+              <p className="block font-sans text-sm antialiased font-medium font-bold leading-none text-white capitalize">
                 HowToReplyTo.com
               </p>
             </div>
@@ -240,7 +275,7 @@ export default function Home({ posts }) {
               />
             </div>
             <div className="mt-px ml-4">
-              <p className="block font-sans text-sm antialiased font-medium leading-none text-white capitalize">
+              <p className="block font-sans text-sm antialiased font-medium font-bold leading-none text-white capitalize">
                 ReplyBrain.com
               </p>
             </div>
@@ -260,9 +295,69 @@ export default function Home({ posts }) {
               />
             </div>
             <div className="mt-px ml-4">
-              <p className="block font-sans text-sm antialiased font-medium leading-none text-white capitalize">
+              <p className="block font-sans text-sm antialiased font-medium font-bold leading-none text-white capitalize">
                 LogoTip.Online
               </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-6 mb-6">
+          <div className="mb-2 text-xl text-gray-700 uppercase font-extralight dark:text-gray-400">
+            {' '}
+            Interests{' '}
+          </div>
+          <div className="flex flex-wrap">
+            <div>
+              {' '}
+              <div className="inline-flex justify-center items-center m-1 font-medium  py-2.5 px-3 bg-white rounded-full text-blue-700 bg-blue-50 dark:bg-stone-900  ">
+                <div className="flex-initial max-w-full text-xs font-bold leading-none">
+                  Frontend Engineering
+                </div>
+              </div>
+            </div>
+
+            <div>
+              {' '}
+              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-red-700 bg-red-50 dark:bg-stone-900">
+                <div className="flex-initial max-w-full text-xs font-bold leading-none">
+                  Distributed Systems
+                </div>
+              </div>
+            </div>
+
+            <div>
+              {' '}
+              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
+                <div className="flex-initial max-w-full text-xs font-bold leading-none">
+                  Backend
+                </div>
+              </div>
+            </div>
+
+            <div>
+              {' '}
+              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-purple-700 bg-purple-50 dark:bg-stone-900">
+                <div className="flex-initial max-w-full text-xs font-bold leading-none">
+                  Product Development
+                </div>
+              </div>
+            </div>
+
+            <div>
+              {' '}
+              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-cyan-700 bg-cyan-50 dark:bg-stone-900">
+                <div className="flex-initial max-w-full text-xs font-bold leading-none">
+                  Design Systems
+                </div>
+              </div>
+            </div>
+
+            <div>
+              {' '}
+              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-orange-700 bg-orange-50 dark:bg-stone-900">
+                <div className="flex-initial max-w-full text-xs font-bold leading-none">UI/UX</div>
+              </div>
             </div>
           </div>
         </div>

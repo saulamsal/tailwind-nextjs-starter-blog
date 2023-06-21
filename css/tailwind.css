@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -30,16 +31,30 @@ body {
   font-family: 'DM Sans', sans-serif;
 }
 
+.font-serif {
+  font-family: 'PT Serif', serif !important;
+}
+
 .gradient-bg {
   /* background: linear-gradient(45deg, #C7F5FE 10%, #C7F5FE 40%, #FCC8F8 40%, #FCC8F8 60%, #EAB4F8 60%, #EAB4F8 65%, #F3F798 65%, #F3F798 90%); */
-  background: radial-gradient(80.99% 100% at 50% 0%, #7ea3cb 0%, #36008e 100%),
+  /* background: radial-gradient(80.99% 100% at 50% 0%, #7ea3cb 0%, #36008e 100%),
     radial-gradient(50% 123.47% at 50% 50%, #efe7c8 0%, #36008e 100%),
     linear-gradient(301.28deg, #ff006b 0%, #48dd9e 100%),
     linear-gradient(294.84deg, #5a60e4 0%, #d30000 100%),
     linear-gradient(52.29deg, #000000 0%, #00ff85 100%),
     radial-gradient(100% 138.69% at 100% 0%, #0007a5 0%, #ff7a00 100%),
     radial-gradient(70.41% 100% at 50% 0%, #d5b300 0%, #7ea3cb 100%);
-  background-blend-mode: screen, screen, lighten, overlay, lighten, difference, normal;
+  background-blend-mode: screen, screen, lighten, overlay, lighten, difference, normal; */
+  background: linear-gradient(
+    89.84deg,
+    rgba(230, 36, 174, 0.16) 0.34%,
+    rgba(94, 58, 255, 0.16) 16.96%,
+    rgba(10, 136, 255, 0.16) 34.66%,
+    rgba(75, 191, 80, 0.16) 50.12%,
+    rgba(137, 206, 0, 0.16) 66.22%,
+    rgba(239, 183, 0, 0.16) 82%,
+    rgba(246, 73, 0, 0.16) 99.9%
+  );
 }
 
 .dark-gradient-bg {
@@ -70,7 +85,20 @@ color: transparent;
 } */
 
 body {
-  background-image: linear-gradient(#444cf70d 1px, transparent 1px),
-    linear-gradient(to right, #444cf70d 1px, #e5e5f700 1px);
+  /* background-image: linear-gradient(#444cf712 1px, transparent 0),
+    linear-gradient(90deg, #444cf71a 1px, #e5e5f700 0); */
+  /* background-image: linear-gradient(rgb(27 37 255 / 6%) 1px, transparent 0),
+    linear-gradient(90deg, #f744441f 1px, rgb(229 229 247 / 6%) 0); */
+  /* background-size: 20px 20px; */
+
+  background-color: #ffffff;
   background-size: 20px 20px;
+  /* background-image:  repeating-linear-gradient(to right, #f0f0ff, #f0f0ff 1px, #ffffff 1px, #ffffff); */
+  background-image: repeating-linear-gradient(
+    to right,
+    #00000000,
+    #ff760045 1px,
+    #ffffff 1px,
+    #ffffff
+  );
 }
