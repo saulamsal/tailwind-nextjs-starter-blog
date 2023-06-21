@@ -4,23 +4,19 @@ class MyDocument extends Document {
     return (
       <Html lang="en" className="scroll-smooth">
         <Head>
-          <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/static/favicons/favicon-32x32.png"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/static/favicons/favicon-16x16.png"
-          />
-          <link rel="manifest" href="/static/favicons/site.webmanifest" />
-          <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
-          <meta name="msapplication-TileColor" content="#000000" />
-          <meta name="theme-color" content="#000000" />
+          <link rel="apple-touch-icon" sizes="76x76" href="/static/images/me.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/static/images/me.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/static/images/me.png" />
+          <link rel="manifest" href="/static/images/me.png" />
+          <link rel="mask-icon" href="/static/images/me.png" color="#5bbad5" />
+          <meta name="msapplication-TileColor" content="#fff" />
+          <meta name="theme-color" content="#fff" />
+
+          <meta property="og:image" content="/static/images/og_pp.png" />
+          <meta property="og:image:secure_url" content="/static/images/og_pp.png" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
           <link
