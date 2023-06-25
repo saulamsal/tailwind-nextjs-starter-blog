@@ -22,7 +22,7 @@ export default function Home({ posts }) {
       <div className="">
         <div className="pb-8 space-y-2 md:space-y-5">
           <h1
-            className="mt-12 mb-4 text-3xl italic font-extrabold leading-9 tracking-tight text-gray-900 gradient-bg dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 "
+            className="mt-12 mb-4 text-3xl italic font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 "
             style={{
               // 'background': '#86abd5',
               padding: '8px 30px',
@@ -31,7 +31,16 @@ export default function Home({ posts }) {
               // color: '#000'
             }}
           >
-            Hey there! 👋
+            Hey there!
+            <img
+              src="https://uploads-ssl.webflow.com/634d560fb778817748fac023/634fa7e89c7b598a8541732f_footer-shape.svg"
+              loading="lazy"
+              alt=""
+              className="inline-flex w-8 ml-2 star animate-spin"
+              style={{
+                'animation-duration': '6s',
+              }}
+            />
           </h1>
           <p
             className="max-w-3xl p-3 text-lg leading-7 text-gray-800 rounded-lg dark:text-gray-400 "
@@ -43,15 +52,15 @@ export default function Home({ posts }) {
           >
             <span className="text-3xl">
               <span
-                className="rounded-full  inline-flex items-center justify-center pl-1  pr-2  ml-9.5 relative top-1  mr-1"
+                className="rounded-full  inline-flex items-center justify-center pl-1  pr-2  ml-9.5 relative top-1  mr-1 gradient-bg"
                 style={{
                   color: '#000',
                   height: '32px',
-                  border: 'dotted 1px',
+                  // border: 'dotted 1px',
                 }}
               >
                 {' '}
-                <img src="static/images/me.png" className="w-7 h-7 rounded-full mr-0.5 " />{' '}
+                <img src="static/images/me.png" className="w-7 h-7 rounded-full mr-0.5  " />{' '}
                 <span className="">Saurabh</span>{' '}
               </span>
               is an{' '}
@@ -69,7 +78,7 @@ export default function Home({ posts }) {
               He loves creating software that adds value to people, customers or himself. He likes
               to design products that just <span className="italic">work</span>. Although a
               self-proclaimed T-shaped engineer, his passion truly lies in frontend engineering, web
-              performance, optimization, and scaling products.
+              performance, optimization, and building products at scale.
             </div>
             <div className="mt-4 font-serif ">
               As a seasoned Software Engineer, he has contributed significantly to numerous
@@ -183,25 +192,17 @@ export default function Home({ posts }) {
               }
             }
           >
-            Say hi to him. ✉️{' '}
+            Say hi to him. 👋{' '}
           </a>
         </div>
 
         <div className="order-1 px-0 px-2 pt-4 overflow-hidden leading-6 tracking-tight text-center rounded-md text-zinc-900 my-14 stripe-bg">
-          <img
-            src="https://uploads-ssl.webflow.com/634d560fb778817748fac023/634fa7e89c7b598a8541732f_footer-shape.svg"
-            loading="lazy"
-            alt=""
-            className="w-20 star animate-spin"
-            style={{
-              'animation-duration': '6s',
-            }}
-          />
+          <img src="https://assets.qlur.com//favicon/android-chrome-512x512.png" className="w-20" />
 
           <div
             className="max-w-md pl-2 mt-2 text-2xl tracking-tight text-left rounded-md mb-14"
             style={{
-              color: '#ecdda4',
+              color: '#0360fe',
             }}
           >
             Currently he is building QLUR.com, a platform that provides curated football news,
@@ -211,8 +212,8 @@ export default function Home({ posts }) {
           </div>
 
           <div className="w-full mx-auto leading-6 text-zinc-900">
-            <h2 className="font-serif text-3xl font-semibold tracking-normal text-white">QLUR</h2>
-            <p className="mt-2 font-serif text-base font-normal tracking-normal text-white opacity-90">
+            <h2 className="font-serif text-3xl font-semibold tracking-normal ">QLUR</h2>
+            <p className="mt-2 font-serif text-base font-normal tracking-normal  opacity-90">
               Football news, tweets, videos<span className="italic"> - all in one place</span>.
             </p>
 

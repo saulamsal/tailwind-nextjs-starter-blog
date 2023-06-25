@@ -93,23 +93,16 @@ body {
 }
 
 .stripe-bg {
-  /* background-color: #ffffff; */
-  background-color: #0a2fff;
-  opacity: 1;
-  background-image: radial-gradient(circle at center center, #fffcf1, #ffffff),
-    repeating-radial-gradient(
-      circle at center center,
-      #fffcf1,
-      #fffcf1,
-      10px,
-      transparent 20px,
-      transparent 10px
-    );
-  background-blend-mode: multiply;
   margin-left: -20px;
   padding: 25px;
   padding-bottom: 0;
   width: calc(100% + 40px);
+
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: linear-gradient(#eeefff 1px, transparent 1px),
+    linear-gradient(to right, #eeefff 1px, #ffffff 1px);
+  background-size: 20px 20px;
 }
 
 .gradient-bg {
