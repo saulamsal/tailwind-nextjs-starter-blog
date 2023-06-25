@@ -106,6 +106,10 @@ body {
       transparent 10px
     );
   background-blend-mode: multiply;
+  margin-left: -20px;
+  padding: 25px;
+  padding-bottom: 0;
+  width: calc(100% + 40px);
 }
 
 .gradient-bg {
@@ -132,5 +136,15 @@ body {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }

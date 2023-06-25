@@ -81,12 +81,12 @@ export default function Home({ posts }) {
             <div className="mt-8 mb-6">
               <div className="mb-2 text-xl text-gray-700 uppercase font-extralight dark:text-gray-400">
                 {' '}
-                His Interests 🧐
+                His Interests
               </div>
               <div className="flex flex-wrap">
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium  py-2.5 px-3 bg-white rounded-full text-blue-700 bg-blue-50 dark:bg-stone-900  ">
+                  <div className="inline-flex justify-center items-center m-1 font-medium  py-2 px-2.5 bg-white rounded-full text-blue-700 bg-blue-50 dark:bg-stone-900  ">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       Frontend Engineering
                     </div>
@@ -104,7 +104,7 @@ export default function Home({ posts }) {
 
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2 px-2.5 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       Backend
                     </div>
@@ -122,7 +122,7 @@ export default function Home({ posts }) {
 
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2 px-2.5 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       Web Performance
                     </div>
@@ -131,7 +131,7 @@ export default function Home({ posts }) {
 
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2 px-2.5 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       PWAs
                     </div>
@@ -192,7 +192,10 @@ export default function Home({ posts }) {
             src="https://uploads-ssl.webflow.com/634d560fb778817748fac023/634fa7e89c7b598a8541732f_footer-shape.svg"
             loading="lazy"
             alt=""
-            className="w-20 star"
+            className="w-20 star animate-spin"
+            style={{
+              'animation-duration': '6s',
+            }}
           />
 
           <div
@@ -204,6 +207,7 @@ export default function Home({ posts }) {
             Currently he is building QLUR.com, a platform that provides curated football news,
             headlines, tweets, videos and live scores from world football customized to an
             individual's preferences.
+            <div className="mt-4 italic text-md">Built for Web, iOS and Android.</div>
           </div>
 
           <div className="w-full mx-auto leading-6 text-zinc-900">
@@ -212,7 +216,7 @@ export default function Home({ posts }) {
               Football news, tweets, videos<span className="italic"> - all in one place</span>.
             </p>
 
-            <ul className="flex justify-center w-full mt-2">
+            {/* <ul className="flex justify-center w-full mt-2">
               <li className="mr-3">
                 {' '}
                 <a
@@ -306,7 +310,7 @@ export default function Home({ posts }) {
                   </svg>
                 </a>
               </li>
-            </ul>
+            </ul> */}
 
             <p className="p-0 mx-0 mt-1 mb-0 text-center">
               <a
@@ -459,7 +463,7 @@ export default function Home({ posts }) {
                     <div className="space-y-5 xl:col-span-3">
                       <div className="space-y-6">
                         <div>
-                          <h2 className="text-2xl font-bold tracking-tight">
+                          <h2 className="mb-2 text-2xl font-bold tracking-tight">
                             <Link
                               href={`/blog/${slug}`}
                               className="text-gray-900 dark:text-gray-100"
