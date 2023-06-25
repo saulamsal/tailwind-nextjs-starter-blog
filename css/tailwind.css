@@ -90,15 +90,43 @@ body {
   /* background-image: linear-gradient(rgb(27 37 255 / 6%) 1px, transparent 0),
     linear-gradient(90deg, #f744441f 1px, rgb(229 229 247 / 6%) 0); */
   /* background-size: 20px 20px; */
+}
 
+.stripe-bg {
   background-color: #ffffff;
+  opacity: 1;
+  background-image: linear-gradient(135deg, #f6f6ff 25%, transparent 25%),
+    linear-gradient(225deg, #f6f6ff 25%, transparent 25%),
+    linear-gradient(45deg, #f6f6ff 25%, transparent 25%),
+    linear-gradient(315deg, #f6f6ff 25%, #ffffff 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
   background-size: 20px 20px;
-  /* background-image:  repeating-linear-gradient(to right, #f0f0ff, #f0f0ff 1px, #ffffff 1px, #ffffff); */
-  background-image: repeating-linear-gradient(
-    to right,
-    #00000000,
-    #ff760045 1px,
-    #ffffff 1px,
-    #ffffff
+  background-repeat: repeat;
+}
+
+.gradient-bg {
+  background: linear-gradient(
+    89.84deg,
+    rgba(230, 36, 174, 0.16) 0.34%,
+    rgba(94, 58, 255, 0.16) 16.96%,
+    rgba(10, 136, 255, 0.16) 34.66%,
+    rgba(75, 191, 80, 0.16) 50.12%,
+    rgba(137, 206, 0, 0.16) 66.22%,
+    rgba(239, 183, 0, 0.16) 82%,
+    rgba(246, 73, 0, 0.16) 99.9%
   );
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

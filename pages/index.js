@@ -73,8 +73,9 @@ export default function Home({ posts }) {
             </div>
             <div className="mt-4 font-serif">
               As a seasoned Software Engineer, he has contributed significantly to numerous
-              corporations like Fly Emirates, Stock Yard Bank (NYSE: SYB), Midwestern Insurance,
-              Wirecrafters, and several others in various industries.
+              corporations and brands like Fly Emirates, Stock Yard Bank (NYSE: SYB), Midwestern
+              Insurance, Jack Harlow Foundation, Wirecrafters, and several others in various
+              industries.
               <div className="mt-4 font-serif">
                 When he's not elbow-deep in code, you'll find Saurabh time-traveling through
                 history, space-hopping across the cosmos, or fortune-telling with futurology. Who
@@ -96,8 +97,8 @@ export default function Home({ posts }) {
           </a>
         </div>
 
-        <div className="order-1 px-0 px-2 pt-4 leading-6 tracking-tight text-center bg-gray-100 rounded-md text-zinc-900 my-14">
-          <div className="  tracking-tight text-left bg-gray-100 rounded-md text-zinc-900 my-14 text-2xl font-serif  max-w-md pl-2">
+        <div className="order-1 px-0 px-2 pt-4 leading-6 tracking-tight text-center rounded-md text-zinc-900 my-14 stripe-bg">
+          <div className="max-w-md pl-2 font-serif text-2xl tracking-tight text-left rounded-md text-blue-900 my-14">
             Currently he is building QLUR.com, a platform that provides curated football news,
             headlines, tweets, videos and live scores from world football customized to an
             individual's preferences.
@@ -236,13 +237,13 @@ export default function Home({ posts }) {
         </div>
 
         <div>
-          <div className="mt-10 mb-2 text-xl text-gray-800 uppercase font-extra-light dark:text-gray-400">
+          <div className="mt-20 mb-2 text-xl text-gray-800 uppercase font-extra-light dark:text-gray-400">
             {' '}
-            Other products he has built
+            Other products he has built 🧙
           </div>
 
           <div
-            className="mt-4 center relative inline-block select-none whitespace-nowrap rounded-full px-3.5 py-1.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white"
+            className="relative inline-block px-4 py-2 mt-4 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
             style={{
               background: '#1ba3a0',
             }}
@@ -255,14 +256,14 @@ export default function Home({ posts }) {
               />
             </div>
             <div className="mt-px ml-4">
-              <p className="block font-sans text-sm antialiased font-medium font-bold leading-none text-white capitalize">
+              <p className="block font-sans text-sm antialiased font-bold text-white capitalize">
                 HowToReplyTo.com
               </p>
             </div>
           </div>
 
           <div
-            className="ml-3 mt-4 center relative inline-block select-none whitespace-nowrap rounded-full px-3.5 py-1.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white"
+            className="relative inline-block px-4 py-2 mt-4 ml-3 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
             style={{
               background: '#1405ed',
             }}
@@ -275,14 +276,14 @@ export default function Home({ posts }) {
               />
             </div>
             <div className="mt-px ml-4">
-              <p className="block font-sans text-sm antialiased font-medium font-bold leading-none text-white capitalize">
+              <p className="block font-sans text-sm antialiased font-bold text-white capitalize">
                 ReplyBrain.com
               </p>
             </div>
           </div>
 
           <div
-            className="ml-3 mt-4 center relative inline-block select-none whitespace-nowrap rounded-full px-3.5 py-1.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white"
+            className="relative inline-block px-4 py-2 mt-4 ml-3 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
             style={{
               background: '#bd3b30',
             }}
@@ -295,23 +296,43 @@ export default function Home({ posts }) {
               />
             </div>
             <div className="mt-px ml-4">
-              <p className="block font-sans text-sm antialiased font-medium font-bold leading-none text-white capitalize">
-                LogoTip.Online
+              <p className="block font-sans text-sm antialiased font-bold text-white capitalize">
+                LogoTip.Online (SOLD 2019)
+              </p>
+            </div>
+          </div>
+
+          <div
+            className="relative inline-block px-4 py-2 mt-4 ml-3 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
+            style={{
+              background: '#4caf50',
+            }}
+          >
+            <div className="absolute w-5 h-5 top-2/4 left-1 -translate-y-2/4">
+              <img
+                alt="replybrain.com"
+                src="https://i.imgur.com/SOH9yRE.png"
+                className="relative inline-block object-cover object-center w-5 h-5 translate-x-px translate-y-px rounded-full"
+              />
+            </div>
+            <div className="mt-px ml-4">
+              <p className="block font-sans text-sm antialiased font-bold text-white capitalize">
+                Onside Goal (SOLD 2016)
               </p>
             </div>
           </div>
         </div>
 
-        <div className="mt-6 mb-6">
+        <div className="mt-20 mb-6">
           <div className="mb-2 text-xl text-gray-700 uppercase font-extralight dark:text-gray-400">
             {' '}
-            Interests{' '}
+            Interests 🧐
           </div>
           <div className="flex flex-wrap">
             <div>
               {' '}
               <div className="inline-flex justify-center items-center m-1 font-medium  py-2.5 px-3 bg-white rounded-full text-blue-700 bg-blue-50 dark:bg-stone-900  ">
-                <div className="flex-initial max-w-full text-xs font-bold leading-none">
+                <div className="flex-initial max-w-full text-sm font-bold leading-none">
                   Frontend Engineering
                 </div>
               </div>
@@ -320,7 +341,7 @@ export default function Home({ posts }) {
             <div>
               {' '}
               <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-red-700 bg-red-50 dark:bg-stone-900">
-                <div className="flex-initial max-w-full text-xs font-bold leading-none">
+                <div className="flex-initial max-w-full text-sm font-bold leading-none">
                   Distributed Systems
                 </div>
               </div>
@@ -329,7 +350,7 @@ export default function Home({ posts }) {
             <div>
               {' '}
               <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
-                <div className="flex-initial max-w-full text-xs font-bold leading-none">
+                <div className="flex-initial max-w-full text-sm font-bold leading-none">
                   Backend
                 </div>
               </div>
@@ -338,7 +359,7 @@ export default function Home({ posts }) {
             <div>
               {' '}
               <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-purple-700 bg-purple-50 dark:bg-stone-900">
-                <div className="flex-initial max-w-full text-xs font-bold leading-none">
+                <div className="flex-initial max-w-full text-sm font-bold leading-none">
                   Product Development
                 </div>
               </div>
@@ -346,8 +367,24 @@ export default function Home({ posts }) {
 
             <div>
               {' '}
+              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
+                <div className="flex-initial max-w-full text-sm font-bold leading-none">
+                  Web Performance
+                </div>
+              </div>
+            </div>
+
+            <div>
+              {' '}
+              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
+                <div className="flex-initial max-w-full text-sm font-bold leading-none">PWAs</div>
+              </div>
+            </div>
+
+            <div>
+              {' '}
               <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-cyan-700 bg-cyan-50 dark:bg-stone-900">
-                <div className="flex-initial max-w-full text-xs font-bold leading-none">
+                <div className="flex-initial max-w-full text-sm font-bold leading-none">
                   Design Systems
                 </div>
               </div>
@@ -355,16 +392,25 @@ export default function Home({ posts }) {
 
             <div>
               {' '}
+              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-cyan-700 bg-cyan-50 dark:bg-stone-900">
+                <div className="flex-initial max-w-full text-sm font-bold leading-none">
+                  Functional Programming
+                </div>
+              </div>
+            </div>
+
+            <div>
+              {' '}
               <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-orange-700 bg-orange-50 dark:bg-stone-900">
-                <div className="flex-initial max-w-full text-xs font-bold leading-none">UI/UX</div>
+                <div className="flex-initial max-w-full text-sm font-bold leading-none">UI/UX</div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-10 mb-2 text-xl text-gray-500 uppercase font-extra-light dark:text-gray-400">
+        <div className="mt-20 mb-2 text-xl text-gray-700 uppercase font-extralight dark:text-gray-400">
           {' '}
-          Blog (in progress){' '}
+          Blog (in progress) 📚
         </div>
 
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
