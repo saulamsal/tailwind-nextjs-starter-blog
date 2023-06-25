@@ -65,22 +65,23 @@ export default function Home({ posts }) {
               founder with an extreme passion for crafting a delightful user experience.
             </span>
 
-            <div className="mt-4 font-serif">
+            <div className="mt-4 font-serif text-red-900">
               He loves creating software that adds value to people, customers or himself. He likes
               to design products that just <span className="italic">work</span>. Although a
               self-proclaimed T-shaped engineer, his passion truly lies in frontend engineering, web
               performance, optimization, and scaling products.
             </div>
-            <div className="mt-4 font-serif">
+            <div className="mt-4 font-serif text-green-900">
               As a seasoned Software Engineer, he has contributed significantly to numerous
               corporations and brands like Fly Emirates, Stock Yard Bank (NYSE: SYB), Midwestern
               Insurance, Jack Harlow Foundation, Wirecrafters, and several others in various
               industries.
-              <div className="mt-4 font-serif">
-                When he's not elbow-deep in code, you'll find Saurabh time-traveling through
-                history, space-hopping across the cosmos, or fortune-telling with futurology. Who
-                said coders can't have a wild side?
-              </div>
+            </div>
+
+            <div className="mt-4 font-serif text-blue-900">
+              When he's not elbow-deep in tech nerdy stuff, you'll find Saurabh time-traveling
+              through history, space-hopping across the cosmos, or fortune-telling with futurology.
+              Who said coders can't have a wild side?
             </div>
           </p>
 
@@ -98,7 +99,14 @@ export default function Home({ posts }) {
         </div>
 
         <div className="order-1 px-0 px-2 pt-4 leading-6 tracking-tight text-center rounded-md text-zinc-900 my-14 stripe-bg">
-          <div className="max-w-md pl-2 font-serif text-2xl tracking-tight text-left rounded-md text-blue-900 my-14">
+          <img
+            src="https://uploads-ssl.webflow.com/634d560fb778817748fac023/634fa7e89c7b598a8541732f_footer-shape.svg"
+            loading="lazy"
+            alt=""
+            className="w-20 star"
+          />
+
+          <div className="max-w-md pl-2 mt-2 font-serif text-2xl tracking-tight text-left text-blue-900 rounded-md mb-14">
             Currently he is building QLUR.com, a platform that provides curated football news,
             headlines, tweets, videos and live scores from world football customized to an
             individual's preferences.
@@ -243,7 +251,7 @@ export default function Home({ posts }) {
           </div>
 
           <div
-            className="relative inline-block px-4 py-2 mt-4 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
+            className="relative inline-block px-4 py-2 mt-4 mr-2 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
             style={{
               background: '#1ba3a0',
             }}
@@ -263,7 +271,7 @@ export default function Home({ posts }) {
           </div>
 
           <div
-            className="relative inline-block px-4 py-2 mt-4 ml-3 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
+            className="relative inline-block px-4 py-2 mt-4 ml-0 ml-3 mr-2 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
             style={{
               background: '#1405ed',
             }}
@@ -283,7 +291,7 @@ export default function Home({ posts }) {
           </div>
 
           <div
-            className="relative inline-block px-4 py-2 mt-4 ml-3 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
+            className="relative inline-block px-4 py-2 mt-4 ml-0 ml-3 mr-2 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
             style={{
               background: '#bd3b30',
             }}
@@ -303,7 +311,7 @@ export default function Home({ posts }) {
           </div>
 
           <div
-            className="relative inline-block px-4 py-2 mt-4 ml-3 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
+            className="relative inline-block px-4 py-2 mt-4 ml-0 ml-3 mr-2 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
             style={{
               background: '#4caf50',
             }}
@@ -323,10 +331,75 @@ export default function Home({ posts }) {
           </div>
         </div>
 
+        <div className="mt-20 mb-2 text-xl text-gray-700 uppercase font-extralight dark:text-gray-400">
+          {' '}
+          Blog 📚
+        </div>
+
+        <div className="p-4 text-blue-700 border-l-2 border-blue-500 bg-blue-50" role="alert">
+          <p className="font-bold">Beware the Product-Builder's Paradox</p>
+          <p>
+            Saurabh's blogs are brewing! Like hidden Easter eggs, they'll pop up just when you least
+            expect.
+          </p>
+        </div>
+
+        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+          {!posts.length && 'No posts found.'}
+          {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
+            const { slug, date, title, summary, tags } = frontMatter
+            return (
+              <li key={slug} className="py-12">
+                <article>
+                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+                    <dl>
+                      <dt className="sr-only">Published on</dt>
+                      <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                        <time dateTime={date}>{formatDate(date)}</time>
+                      </dd>
+                    </dl>
+                    <div className="space-y-5 xl:col-span-3">
+                      <div className="space-y-6">
+                        <div>
+                          <h2 className="text-2xl font-bold tracking-tight">
+                            <Link
+                              href={`/blog/${slug}`}
+                              className="text-gray-900 dark:text-gray-100"
+                            >
+                              {title}
+                            </Link>
+                          </h2>
+                          <div className="flex flex-wrap">
+                            {tags.map((tag) => (
+                              <Tag key={tag} text={tag} />
+                            ))}
+                          </div>
+                        </div>
+                        <div className="prose text-gray-500 max-w-none dark:text-gray-400">
+                          {summary}
+                        </div>
+                      </div>
+                      <div className="text-base font-medium leading-6">
+                        <Link
+                          href={`/blog/${slug}`}
+                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                          aria-label={`Read "${title}"`}
+                        >
+                          Read more &rarr;
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            )
+          })}
+        </ul>
+
         <div className="mt-20 mb-6">
           <div className="mb-2 text-xl text-gray-700 uppercase font-extralight dark:text-gray-400">
             {' '}
-            Interests 🧐
+            His Interests 🧐
           </div>
           <div className="flex flex-wrap">
             <div>
@@ -401,69 +474,12 @@ export default function Home({ posts }) {
 
             <div>
               {' '}
-              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-orange-700 bg-orange-50 dark:bg-stone-900">
+              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-blue-700 bg-orange-50 dark:bg-stone-900">
                 <div className="flex-initial max-w-full text-sm font-bold leading-none">UI/UX</div>
               </div>
             </div>
           </div>
         </div>
-
-        <div className="mt-20 mb-2 text-xl text-gray-700 uppercase font-extralight dark:text-gray-400">
-          {' '}
-          Blog (in progress) 📚
-        </div>
-
-        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          {!posts.length && 'No posts found.'}
-          {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
-            return (
-              <li key={slug} className="py-12">
-                <article>
-                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
-                    <dl>
-                      <dt className="sr-only">Published on</dt>
-                      <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                        <time dateTime={date}>{formatDate(date)}</time>
-                      </dd>
-                    </dl>
-                    <div className="space-y-5 xl:col-span-3">
-                      <div className="space-y-6">
-                        <div>
-                          <h2 className="text-2xl font-bold tracking-tight">
-                            <Link
-                              href={`/blog/${slug}`}
-                              className="text-gray-900 dark:text-gray-100"
-                            >
-                              {title}
-                            </Link>
-                          </h2>
-                          <div className="flex flex-wrap">
-                            {tags.map((tag) => (
-                              <Tag key={tag} text={tag} />
-                            ))}
-                          </div>
-                        </div>
-                        <div className="prose text-gray-500 max-w-none dark:text-gray-400">
-                          {summary}
-                        </div>
-                      </div>
-                      <div className="text-base font-medium leading-6">
-                        <Link
-                          href={`/blog/${slug}`}
-                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                          aria-label={`Read "${title}"`}
-                        >
-                          Read more &rarr;
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            )
-          })}
-        </ul>
       </div>
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
