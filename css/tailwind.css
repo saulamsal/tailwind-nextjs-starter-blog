@@ -93,7 +93,8 @@ body {
 }
 
 .stripe-bg {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: #0a2fff;
   opacity: 1;
   background-image: radial-gradient(circle at center center, #fffcf1, #ffffff),
     repeating-radial-gradient(

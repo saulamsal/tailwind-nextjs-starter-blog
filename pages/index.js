@@ -65,20 +65,109 @@ export default function Home({ posts }) {
               founder with an extreme passion for crafting a delightful user experience.
             </span>
 
-            <div className="mt-4 font-serif text-red-900">
+            <div className="mt-4 font-serif">
               He loves creating software that adds value to people, customers or himself. He likes
               to design products that just <span className="italic">work</span>. Although a
               self-proclaimed T-shaped engineer, his passion truly lies in frontend engineering, web
               performance, optimization, and scaling products.
             </div>
-            <div className="mt-4 font-serif text-green-900">
+            <div className="mt-4 font-serif ">
               As a seasoned Software Engineer, he has contributed significantly to numerous
               corporations and brands like Fly Emirates, Stock Yard Bank (NYSE: SYB), Midwestern
               Insurance, Jack Harlow Foundation, Wirecrafters, and several others in various
               industries.
             </div>
 
-            <div className="mt-4 font-serif text-blue-900">
+            <div className="mt-8 mb-6">
+              <div className="mb-2 text-xl text-gray-700 uppercase font-extralight dark:text-gray-400">
+                {' '}
+                His Interests 🧐
+              </div>
+              <div className="flex flex-wrap">
+                <div>
+                  {' '}
+                  <div className="inline-flex justify-center items-center m-1 font-medium  py-2.5 px-3 bg-white rounded-full text-blue-700 bg-blue-50 dark:bg-stone-900  ">
+                    <div className="flex-initial max-w-full text-sm font-bold leading-none">
+                      Frontend Engineering
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  {' '}
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-red-700 bg-red-50 dark:bg-stone-900">
+                    <div className="flex-initial max-w-full text-sm font-bold leading-none">
+                      Distributed Systems
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  {' '}
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
+                    <div className="flex-initial max-w-full text-sm font-bold leading-none">
+                      Backend
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  {' '}
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-purple-700 bg-purple-50 dark:bg-stone-900">
+                    <div className="flex-initial max-w-full text-sm font-bold leading-none">
+                      Product Development
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  {' '}
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
+                    <div className="flex-initial max-w-full text-sm font-bold leading-none">
+                      Web Performance
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  {' '}
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
+                    <div className="flex-initial max-w-full text-sm font-bold leading-none">
+                      PWAs
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  {' '}
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-cyan-700 bg-cyan-50 dark:bg-stone-900">
+                    <div className="flex-initial max-w-full text-sm font-bold leading-none">
+                      Design Systems
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  {' '}
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-cyan-700 bg-cyan-50 dark:bg-stone-900">
+                    <div className="flex-initial max-w-full text-sm font-bold leading-none">
+                      Functional Programming
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  {' '}
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-orange-700 bg-orange-50 dark:bg-stone-900">
+                    <div className="flex-initial max-w-full text-sm font-bold leading-none">
+                      UI/UX
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-4 font-serif">
               When he's not elbow-deep in tech nerdy stuff, you'll find Saurabh time-traveling
               through history, space-hopping across the cosmos, or fortune-telling with futurology.
               Who said coders can't have a wild side?
@@ -98,7 +187,7 @@ export default function Home({ posts }) {
           </a>
         </div>
 
-        <div className="order-1 px-0 px-2 pt-4 leading-6 tracking-tight text-center rounded-md text-zinc-900 my-14 stripe-bg">
+        <div className="order-1 px-0 px-2 pt-4 overflow-hidden leading-6 tracking-tight text-center rounded-md text-zinc-900 my-14 stripe-bg">
           <img
             src="https://uploads-ssl.webflow.com/634d560fb778817748fac023/634fa7e89c7b598a8541732f_footer-shape.svg"
             loading="lazy"
@@ -106,15 +195,20 @@ export default function Home({ posts }) {
             className="w-20 star"
           />
 
-          <div className="max-w-md pl-2 mt-2 font-serif text-2xl tracking-tight text-left text-blue-900 rounded-md mb-14">
+          <div
+            className="max-w-md pl-2 mt-2 text-2xl tracking-tight text-left rounded-md mb-14"
+            style={{
+              color: '#ecdda4',
+            }}
+          >
             Currently he is building QLUR.com, a platform that provides curated football news,
             headlines, tweets, videos and live scores from world football customized to an
             individual's preferences.
           </div>
 
           <div className="w-full mx-auto leading-6 text-zinc-900">
-            <h2 className="font-sans text-3xl font-semibold tracking-normal">QLUR</h2>
-            <p className="mt-2 font-sans text-base font-normal tracking-normal">
+            <h2 className="font-serif text-3xl font-semibold tracking-normal text-white">QLUR</h2>
+            <p className="mt-2 font-serif text-base font-normal tracking-normal text-white opacity-90">
               Football news, tweets, videos<span className="italic"> - all in one place</span>.
             </p>
 
@@ -241,7 +335,11 @@ export default function Home({ posts }) {
             </p>
           </div>
 
-          <img src="/static/images/qlur_cover.png" />
+          <img
+            src="/static/images/qlur_cover.png"
+            className="relative top-2"
+            style={{ width: ' 120%', 'max-width': 'fit-content', left: '-30px' }}
+          />
         </div>
 
         <div>
@@ -395,91 +493,6 @@ export default function Home({ posts }) {
             )
           })}
         </ul>
-
-        <div className="mt-20 mb-6">
-          <div className="mb-2 text-xl text-gray-700 uppercase font-extralight dark:text-gray-400">
-            {' '}
-            His Interests 🧐
-          </div>
-          <div className="flex flex-wrap">
-            <div>
-              {' '}
-              <div className="inline-flex justify-center items-center m-1 font-medium  py-2.5 px-3 bg-white rounded-full text-blue-700 bg-blue-50 dark:bg-stone-900  ">
-                <div className="flex-initial max-w-full text-sm font-bold leading-none">
-                  Frontend Engineering
-                </div>
-              </div>
-            </div>
-
-            <div>
-              {' '}
-              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-red-700 bg-red-50 dark:bg-stone-900">
-                <div className="flex-initial max-w-full text-sm font-bold leading-none">
-                  Distributed Systems
-                </div>
-              </div>
-            </div>
-
-            <div>
-              {' '}
-              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
-                <div className="flex-initial max-w-full text-sm font-bold leading-none">
-                  Backend
-                </div>
-              </div>
-            </div>
-
-            <div>
-              {' '}
-              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-purple-700 bg-purple-50 dark:bg-stone-900">
-                <div className="flex-initial max-w-full text-sm font-bold leading-none">
-                  Product Development
-                </div>
-              </div>
-            </div>
-
-            <div>
-              {' '}
-              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
-                <div className="flex-initial max-w-full text-sm font-bold leading-none">
-                  Web Performance
-                </div>
-              </div>
-            </div>
-
-            <div>
-              {' '}
-              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5 px-3 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
-                <div className="flex-initial max-w-full text-sm font-bold leading-none">PWAs</div>
-              </div>
-            </div>
-
-            <div>
-              {' '}
-              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-cyan-700 bg-cyan-50 dark:bg-stone-900">
-                <div className="flex-initial max-w-full text-sm font-bold leading-none">
-                  Design Systems
-                </div>
-              </div>
-            </div>
-
-            <div>
-              {' '}
-              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-cyan-700 bg-cyan-50 dark:bg-stone-900">
-                <div className="flex-initial max-w-full text-sm font-bold leading-none">
-                  Functional Programming
-                </div>
-              </div>
-            </div>
-
-            <div>
-              {' '}
-              <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-blue-700 bg-orange-50 dark:bg-stone-900">
-                <div className="flex-initial max-w-full text-sm font-bold leading-none">UI/UX</div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
