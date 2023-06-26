@@ -371,7 +371,7 @@ export default function Home({ posts }) {
           <img
             src="/static/images/qlur_cover.png"
             className="relative top-2"
-            style={{ width: ' calc(100% + 30px)', 'max-width': 'fit-content', left: '-30px' }}
+            // style={{ width: ' calc(100% + 30px)', 'max-width': 'fit-content', left: '-30px' }}
           />
         </div>
 
