@@ -112,7 +112,7 @@ export default function Home({ posts }) {
               <div className="flex flex-wrap">
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium  py-2 px-2.5 bg-white rounded-full text-blue-700 bg-blue-50 dark:bg-stone-900  ">
+                  <div className="inline-flex justify-center items-center m-1 font-medium  py-2 px-2.5 bg-white rounded-full text-blue-700 bg-blue-50 dark:bg-stone-900  border-dotted border border-current  ">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       Frontend Engineering
                     </div>
@@ -121,7 +121,7 @@ export default function Home({ posts }) {
 
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-red-700 bg-red-50 dark:bg-stone-900">
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-red-700 bg-red-50 dark:bg-stone-900 border-dotted border border-current">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       Distributed Systems
                     </div>
@@ -130,7 +130,7 @@ export default function Home({ posts }) {
 
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium py-2 px-2.5 bg-white rounded-full text-pink-700 bg-pink-50 dark:bg-pink-900">
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2 px-2.5 bg-white rounded-full text-pink-700 bg-pink-50 dark:bg-pink-900 border-dotted border border-current">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       Backend
                     </div>
@@ -139,7 +139,7 @@ export default function Home({ posts }) {
 
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-purple-700 bg-purple-50 dark:bg-stone-900">
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-purple-700 bg-purple-50 dark:bg-stone-900 border-dotted border border-current">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       Product Development
                     </div>
@@ -148,7 +148,7 @@ export default function Home({ posts }) {
 
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium py-2 px-2.5 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2 px-2.5 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900 border-dotted border border-current">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       Web Performance
                     </div>
@@ -157,7 +157,7 @@ export default function Home({ posts }) {
 
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium py-2 px-2.5 bg-white rounded-full text-sky-700 bg-sky-50 dark:bg-sky-900">
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2 px-2.5 bg-white rounded-full text-sky-700 bg-sky-50 dark:bg-sky-900 border-dotted border border-current">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       PWAs
                     </div>
@@ -166,7 +166,7 @@ export default function Home({ posts }) {
 
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-cyan-700 bg-cyan-50 dark:bg-stone-900">
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-cyan-700 bg-cyan-50 dark:bg-stone-900 border-dotted border border-current">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       Design Systems
                     </div>
@@ -175,7 +175,7 @@ export default function Home({ posts }) {
 
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-lime-700 bg-lime-50 dark:bg-lime-900">
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-lime-700 bg-lime-50 dark:bg-lime-900 border-dotted border border-current">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       Functional Programming
                     </div>
@@ -184,7 +184,7 @@ export default function Home({ posts }) {
 
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-orange-700 bg-orange-50 dark:bg-stone-900">
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-orange-700 bg-orange-50 dark:bg-stone-900 border-dotted border border-current">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       UI/UX
                     </div>
@@ -238,9 +238,9 @@ export default function Home({ posts }) {
               className="w-20"
             />
 
-            <p className="mt-2 font-serif text-base font-normal tracking-normal opacity-90">
+            {/* <p className="mt-2 font-serif text-base font-normal tracking-normal opacity-90">
               Football news, tweets, videos<span className="italic"> - all in one place</span>.
-            </p>
+            </p> */}
 
             {/* <ul className="flex justify-center w-full mt-2">
               <li className="mr-3">
