@@ -213,7 +213,7 @@ export default function Home({ posts }) {
 
           <div className="w-full mx-auto leading-6 text-zinc-900">
             <h2 className="font-serif text-3xl font-semibold tracking-normal ">QLUR</h2>
-            <p className="mt-2 font-serif text-base font-normal tracking-normal  opacity-90">
+            <p className="mt-2 font-serif text-base font-normal tracking-normal opacity-90">
               Football news, tweets, videos<span className="italic"> - all in one place</span>.
             </p>
 
@@ -350,11 +350,11 @@ export default function Home({ posts }) {
         <div>
           <div className="mt-20 mb-2 text-xl text-gray-800 uppercase font-extra-light dark:text-gray-400">
             {' '}
-            Other products he has built 🧙
+            Other products he has built
           </div>
 
           <div
-            className="relative inline-block px-4 py-2 mt-4 mr-2 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
+            className="relative inline-block px-4 py-2 mt-4 mr-2 font-sans text-xs leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
             style={{
               background: '#1ba3a0',
             }}
@@ -367,14 +367,14 @@ export default function Home({ posts }) {
               />
             </div>
             <div className="mt-px ml-4">
-              <p className="block font-sans text-sm antialiased font-bold text-white capitalize">
+              <p className="block font-sans text-sm antialiased text-white capitalize">
                 HowToReplyTo.com
               </p>
             </div>
           </div>
 
           <div
-            className="relative inline-block px-4 py-2 mt-4 ml-0 ml-3 mr-2 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
+            className="relative inline-block px-4 py-2 mt-4 ml-0 ml-3 mr-2 font-sans text-xs leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
             style={{
               background: '#1405ed',
             }}
@@ -387,14 +387,14 @@ export default function Home({ posts }) {
               />
             </div>
             <div className="mt-px ml-4">
-              <p className="block font-sans text-sm antialiased font-bold text-white capitalize">
+              <p className="block font-sans text-sm antialiased text-white capitalize">
                 ReplyBrain.com
               </p>
             </div>
           </div>
 
           <div
-            className="relative inline-block px-4 py-2 mt-4 ml-0 ml-3 mr-2 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
+            className="relative inline-block px-4 py-2 mt-4 ml-0 ml-3 mr-2 font-sans text-xs leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
             style={{
               background: '#bd3b30',
             }}
@@ -407,14 +407,14 @@ export default function Home({ posts }) {
               />
             </div>
             <div className="mt-px ml-4">
-              <p className="block font-sans text-sm antialiased font-bold text-white capitalize">
+              <p className="block font-sans text-sm antialiased text-white capitalize">
                 LogoTip.Online (SOLD 2019)
               </p>
             </div>
           </div>
 
           <div
-            className="relative inline-block px-4 py-2 mt-4 ml-0 ml-3 mr-2 font-sans text-xs font-bold leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
+            className="relative inline-block px-4 py-2 mt-4 ml-0 ml-3 mr-2 font-sans text-xs leading-none text-white uppercase align-baseline rounded-full select-none center whitespace-nowrap"
             style={{
               background: '#4caf50',
             }}
@@ -427,7 +427,7 @@ export default function Home({ posts }) {
               />
             </div>
             <div className="mt-px ml-4">
-              <p className="block font-sans text-sm antialiased font-bold text-white capitalize">
+              <p className="block font-sans text-sm antialiased text-white capitalize">
                 Onside Goal (SOLD 2016)
               </p>
             </div>
@@ -439,7 +439,7 @@ export default function Home({ posts }) {
           Blog 📚
         </div>
 
-        <div className="p-4 text-blue-700 border-l-2 border-blue-500 bg-blue-50" role="alert">
+        <div className="p-4 text-blue-700 rounded-md  bg-blue-50" role="alert">
           <p className="font-bold">Beware the Product-Builder's Paradox</p>
           <p>
             Saurabh's blogs are brewing! Like hidden Easter eggs, they'll pop up just when you least
