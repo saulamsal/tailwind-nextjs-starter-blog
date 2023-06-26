@@ -442,6 +442,10 @@ export default function Home({ posts }) {
               </p>
             </div>
           </div>
+
+          <div className="italic mt-4 text-gray-600 font-serif pr-2 text-sm">
+            + helped a few more startups go from idea to MVP.
+          </div>
         </div>
 
         <div className="mt-20 mb-2 text-xl text-gray-700 uppercase font-extralight dark:text-gray-400">
