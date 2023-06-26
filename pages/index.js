@@ -85,16 +85,23 @@ export default function Home({ posts }) {
               He loves creating software that adds value to people, customers or himself. He likes
               to{' '}
               <span className="mark_pen">
-                design products that just <span className="italic">work</span>{' '}
+                design products that just <span className="italic">work.</span>{' '}
               </span>
-              . Although a self-proclaimed T-shaped engineer, his passion truly lies in frontend
-              engineering, web performance, optimization, and building products at scale.
+              A self-proclaimed T-shaped engineer, his passion truly lies in frontend engineering.
+              He is particularly enthusiastic about web performance, optimization, and building
+              products at scale.
             </div>
             <div className="mt-4 font-serif ">
               As a seasoned Software Engineer, he has contributed significantly to numerous
               corporations and brands like Fly Emirates, Stock Yard Bank (NYSE: SYB), Midwestern
               Insurance, Jack Harlow Foundation, Wirecrafters, and several others in various
               industries.
+            </div>
+
+            <div className="mt-4 font-serif">
+              When he's not elbow-deep in code, you'll find Saurabh time-traveling through history,
+              space-hopping across the cosmos, or fortune-telling with futurology. Who said coders
+              can't have a wild side?
             </div>
 
             <div className="mt-8 mb-6">
@@ -187,9 +194,8 @@ export default function Home({ posts }) {
             </div>
 
             <div className="mt-4 font-serif">
-              When he's not elbow-deep in tech nerdy stuff, you'll find Saurabh time-traveling
-              through history, space-hopping across the cosmos, or fortune-telling with futurology.
-              Who said coders can't have a wild side?
+              Roll a dice, and you may spot him making duck faces at monuments in DC, cheering on
+              Austin FC in cowboy boots, or getting lost in a bourbon barrel in Louisville!
             </div>
           </p>
 
@@ -443,7 +449,7 @@ export default function Home({ posts }) {
             </div>
           </div>
 
-          <div className="italic mt-4 text-gray-600 font-serif pr-2 text-sm">
+          <div className="pr-2 mt-4 font-serif text-sm italic text-gray-600">
             + helped a few more startups go from idea to MVP.
           </div>
         </div>
