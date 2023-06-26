@@ -180,3 +180,11 @@ body {
     transform: rotate(0deg);
   }
 }
+
+@media (max-width: 767px) {
+  .cover-image {
+    transform: rotate(31deg);
+    max-width: 658px;
+    left: -114px;
+  }
+}
