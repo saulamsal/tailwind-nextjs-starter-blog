@@ -213,8 +213,6 @@ export default function Home({ posts }) {
         </div>
 
         <div className="order-1 px-0 px-2 pt-4 overflow-hidden leading-6 tracking-tight text-center rounded-md text-zinc-900 my-14 stripe-bg">
-          <img src="https://assets.qlur.com//favicon/android-chrome-512x512.png" className="w-20" />
-
           <div
             className="max-w-md pl-2 mt-2 text-2xl tracking-tight text-left rounded-md mb-14"
             style={{
@@ -224,11 +222,22 @@ export default function Home({ posts }) {
             Currently he is building QLUR.com, a platform that provides curated football news,
             headlines, tweets, videos and live scores from world football customized to an
             individual's preferences.
-            <div className="mt-4 italic text-md">Built for Web, iOS and Android.</div>
+            <div
+              className="mt-4 font-serif text-md"
+              style={{
+                color: '#c9b360',
+              }}
+            >
+              Built for Web, iOS and Android.
+            </div>
           </div>
 
-          <div className="w-full mx-auto leading-6 text-zinc-900">
-            <h2 className="font-serif text-3xl font-semibold tracking-normal ">QLUR</h2>
+          <div className="flex flex-col items-center w-full mx-auto leading-6 text-zinc-900 ">
+            <img
+              src="https://assets.qlur.com//favicon/android-chrome-512x512.png"
+              className="w-20"
+            />
+
             <p className="mt-2 font-serif text-base font-normal tracking-normal opacity-90">
               Football news, tweets, videos<span className="italic"> - all in one place</span>.
             </p>
@@ -359,7 +368,7 @@ export default function Home({ posts }) {
           <img
             src="/static/images/qlur_cover.png"
             className="relative top-2"
-            style={{ width: ' 120%', 'max-width': 'fit-content', left: '-30px' }}
+            style={{ width: ' calc(100% + 30px)', 'max-width': 'fit-content', left: '-30px' }}
           />
         </div>
 
