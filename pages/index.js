@@ -61,7 +61,14 @@ export default function Home({ posts }) {
               >
                 {' '}
                 <img src="static/images/me.png" className="w-7 h-7 rounded-full mr-0.5  " />{' '}
-                <span className="">Saurabh</span>{' '}
+                <span
+                  className=""
+                  style={{
+                    'letter-spacing': '-2px',
+                  }}
+                >
+                  Saurabh
+                </span>{' '}
               </span>
               is an{' '}
               <a
@@ -76,9 +83,12 @@ export default function Home({ posts }) {
 
             <div className="mt-4 font-serif">
               He loves creating software that adds value to people, customers or himself. He likes
-              to design products that just <span className="italic">work</span>. Although a
-              self-proclaimed T-shaped engineer, his passion truly lies in frontend engineering, web
-              performance, optimization, and building products at scale.
+              to{' '}
+              <span className="mark_pen">
+                design products that just <span className="italic">work</span>{' '}
+              </span>
+              . Although a self-proclaimed T-shaped engineer, his passion truly lies in frontend
+              engineering, web performance, optimization, and building products at scale.
             </div>
             <div className="mt-4 font-serif ">
               As a seasoned Software Engineer, he has contributed significantly to numerous
@@ -439,7 +449,7 @@ export default function Home({ posts }) {
           Blog 📚
         </div>
 
-        <div className="p-4 text-blue-700 rounded-md  bg-blue-50" role="alert">
+        <div className="p-4 text-blue-700 rounded-md bg-blue-50" role="alert">
           <p className="font-bold">Beware the Product-Builder's Paradox</p>
           <p>
             Saurabh's blogs are brewing! Like hidden Easter eggs, they'll pop up just when you least
