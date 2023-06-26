@@ -208,7 +208,7 @@ export default function Home({ posts }) {
               }
             }
           >
-            Say hi to him. 👋{' '}
+            Say hi to him. <span className="wave">👋</span>{' '}
           </a>
         </div>
 
