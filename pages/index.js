@@ -123,7 +123,7 @@ export default function Home({ posts }) {
 
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium py-2 px-2.5 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2 px-2.5 bg-white rounded-full text-pink-700 bg-pink-50 dark:bg-pink-900">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       Backend
                     </div>
@@ -150,7 +150,7 @@ export default function Home({ posts }) {
 
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium py-2 px-2.5 bg-white rounded-full text-green-700 bg-green-50 dark:bg-stone-900">
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2 px-2.5 bg-white rounded-full text-sky-700 bg-sky-50 dark:bg-sky-900">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       PWAs
                     </div>
@@ -168,7 +168,7 @@ export default function Home({ posts }) {
 
                 <div>
                   {' '}
-                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-cyan-700 bg-cyan-50 dark:bg-stone-900">
+                  <div className="inline-flex justify-center items-center m-1 font-medium py-2.5  px-3 bg-white rounded-full text-lime-700 bg-lime-50 dark:bg-lime-900">
                     <div className="flex-initial max-w-full text-sm font-bold leading-none">
                       Functional Programming
                     </div>

@@ -143,5 +143,5 @@ body {
 }
 .mark_pen {
   font-style: italic;
-  background-image: linear-gradient(transparent 50%, hwb(52deg 0% 0% / 38%) 50%);
+  background-image: linear-gradient(#ffffff00 50%, #ecdda475);
 }
