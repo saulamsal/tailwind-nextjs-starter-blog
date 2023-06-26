@@ -100,8 +100,8 @@ body {
 
   background-color: #ffffff;
   opacity: 1;
-  background-image: linear-gradient(#eeefff 1px, transparent 1px),
-    linear-gradient(to right, #eeefff 1px, #ffffff 1px);
+  background-image: linear-gradient(#e8e9ff 1px, transparent 0),
+    linear-gradient(90deg, #edeeff 1px, #fff 0);
   background-size: 20px 20px;
 }
 

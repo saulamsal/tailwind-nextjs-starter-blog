@@ -202,11 +202,14 @@ export default function Home({ posts }) {
           <a
             className="flex mt-4 ml-3.5 text-3xl font-bold font-serif"
             href="mailto:saulamsal@yahoo.com"
-            style={
-              {
-                // 'text-shadow': '0  13.36px 8.896px #c4b59d, 0 -2px 1px #fff'
-              }
-            }
+            style={{
+              border: '1px solid #9b7500',
+              display: 'inline-flex',
+              padding: '7px 21px',
+              borderRadius: '0 50px 50px 50px',
+              background: '#ffd23591',
+              // 'text-shadow': '0  13.36px 8.896px #c4b59d, 0 -2px 1px #fff'
+            }}
           >
             Say hi to him. <span className="wave">👋</span>{' '}
           </a>
