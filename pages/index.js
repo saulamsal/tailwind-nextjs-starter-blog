@@ -7,7 +7,7 @@ import formatDate from '@/lib/utils/formatDate'
 
 import NewsletterForm from '@/components/NewsletterForm'
 
-const MAX_DISPLAY = 5
+const MAX_DISPLAY = 10
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
@@ -507,11 +507,11 @@ export default function Home({ posts }) {
                             ))}
                           </div>
                         </div>
-                        <div className="prose text-gray-500 max-w-none dark:text-gray-400">
+                        {/* <div className="prose text-gray-500 max-w-none dark:text-gray-400">
                           {summary}
-                        </div>
+                        </div> */}
                       </div>
-                      <div className="text-base font-medium leading-6">
+                      {/* <div className="text-base font-medium leading-6">
                         <Link
                           href={`/blog/${slug}`}
                           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
@@ -519,7 +519,7 @@ export default function Home({ posts }) {
                         >
                           Read more &rarr;
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </article>
